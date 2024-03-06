@@ -1,5 +1,5 @@
 import { Prisma, PrismaClient, SelectedEnum, User } from "@prisma/client";
-import { PrismaClientKnownRequestError } from "@prisma/client/runtime";
+import { PrismaClientKnownRequestError } from "@prisma/client/runtime/library";
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
 import Leaderboard from "../../../components/Leaderboard";
