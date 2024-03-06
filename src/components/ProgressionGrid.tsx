@@ -7,6 +7,9 @@ import { api } from "../utils/api";
 interface ProgressionGridInterface {
   currentPage?: string;
 }
+
+const STUDENT_GROUP = "NorwaySpring2024A";
+
 const ProgressionGrid = (props: ProgressionGridInterface) => {
   const { data: session, status } = useSession();
   const [isShowing, setIsShowing] = useState<Activity | null>();
@@ -64,7 +67,9 @@ const ProgressionGrid = (props: ProgressionGridInterface) => {
                   item.url +
                   "&usr=" +
                   session.user?.protusId +
-                  "&grp=NorwayFall2022B&sid=TEST&cid=352"
+                  "&grp=" +
+                  STUDENT_GROUP +
+                  "&sid=TEST&cid=352"
                 }
                 onClick={() => {
                   setSelectedActivity(item.activityId);
@@ -114,7 +119,9 @@ const ProgressionGrid = (props: ProgressionGridInterface) => {
                   item.url +
                   "&usr=" +
                   session.user?.protusId +
-                  "&grp=NorwayFall2022B&sid=TEST&cid=352"
+                  "&grp=" +
+                  STUDENT_GROUP +
+                  "&sid=TEST&cid=352"
                 }
                 onClick={() => {
                   setSelectedActivity(item.activityId);
@@ -164,7 +171,9 @@ const ProgressionGrid = (props: ProgressionGridInterface) => {
                   item.url +
                   "&usr=" +
                   session.user?.protusId +
-                  "&grp=NorwayFall2022B&sid=TEST&cid=352"
+                  "&grp=" +
+                  STUDENT_GROUP +
+                  "&sid=TEST&cid=352"
                 }
                 onClick={() => {
                   setSelectedActivity(item.activityId);

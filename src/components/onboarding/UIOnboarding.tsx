@@ -160,7 +160,7 @@ const UIOnboarding = () => {
                 <p className="my-1 text-sm text-gray-400">
                   Your ID will be sent to you on the email you have associated
                   with your GitHub account. It is a five digit number starting
-                  with 22 (ex: 22170). If you have not received an email two
+                  with 24 (ex: 24170). If you have not received an email two
                   hours after signin, please contact{" "}
                   <a
                     className="text-indigo-600"
@@ -198,7 +198,7 @@ const UIOnboarding = () => {
                         : "border-zinc-300 bg-gray-50 text-gray-900  focus:border-blue-500 focus:ring-blue-500 dark:border-zinc-600  dark:bg-zinc-800 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500",
                       "block flex-1 rounded-none rounded-r-lg border p-2.5 text-sm"
                     )}
-                    placeholder="22xxx"
+                    placeholder="24xxx"
                     required={true}
                   ></input>
                 </div>

@@ -2,6 +2,8 @@ import { PlayIcon, ArrowLongRightIcon } from "@heroicons/react/24/solid";
 import { useUpdateExerciseHistory } from "../hooks/useUpdateExerciseHistory";
 import { api } from "../utils/api";
 
+const STUDENT_GROUP = "NorwaySpring2024A";
+
 const ContinueCard = () => {
   const {
     data: lastUnfinishedActivity,
@@ -66,7 +68,9 @@ const ContinueCard = () => {
               lastUnfinishedActivity.ActivityResource.url +
               "&usr=" +
               lastUnfinishedActivity?.user.protusId +
-              "&grp=NorwayFall2022B&sid=TEST&cid=352"
+              "&grp=" +
+              STUDENT_GROUP +
+              "&sid=TEST&cid=352"
             }
             rel="noreferrer"
             className="justify-self-center"

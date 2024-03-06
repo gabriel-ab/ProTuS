@@ -10,6 +10,8 @@ import { useUpdateExerciseHistory } from "../hooks/useUpdateExerciseHistory";
 import { Activity } from "../server/schema/LearnerActivitySchema";
 import { api } from "../utils/api";
 
+const STUDENT_GROUP = "NorwaySpring2024A";
+
 const TimelineWrapper = (props: {
   recommendedActivities: Activity[];
   learnerAnalytics: any;
@@ -45,7 +47,9 @@ const TimelineWrapper = (props: {
               activity.url +
               "&usr=" +
               session.user?.protusId +
-              "&grp=NorwayFall2022B&sid=TEST&cid=352"
+              "&grp=" +
+              STUDENT_GROUP +
+              "&sid=TEST&cid=352"
             }
             onClick={() => {
               setSelectedActivity(activity.activityId);
